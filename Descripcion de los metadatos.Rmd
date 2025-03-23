@@ -1,0 +1,20 @@
+---
+title: "Descripción de los metadatos"
+output:
+  pdf_document: default
+  html_document: default
+date: "2025-03-21"
+---
+
+En este archivo se describen los metadatos de las muestras del estudio.
+
+
+Los metadatos se encuentran en el archivo metadatos_cachexia.csv
+
+Los metadatos disponibles (archivo metadatos_cachexia.csv) corresponden a la columna Muscle.loss extraida a partir del dataset completo donde se especifica el estado del paciente respecto a la pérdida muscular. 
+
+Los pacientes se clasifican en función de dos categorias:
+
+- "cachexic": paciente con cachexia.
+
+- "control": paciente normal sin cachexia.
