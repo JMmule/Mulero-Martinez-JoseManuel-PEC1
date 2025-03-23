@@ -95,7 +95,7 @@ A continuación se exponen los resultados del análisis exploratorio del dataset
 El objeto se de la clase SummarizedExperiment presenta la siguiente estructura:
 
 |  |  |  |
-|------------------|------------------|-----------------------------------|
+|-------------------|-------------------|-----------------------------------|
 | clase | SummarizedExperiment | Objeto de la clase SummarizedExperiment, que es utilizada en Bioconductor para almacenar datos ómicos |
 | dimensión | 63 77 | 63 es el numero de filas en assayData, filas que corresponden a los metabolitos analizados. 77 es el número de columnas de assayData que corresponden a las muestras. |
 | metadata | 0 | Indica que no hay agregada información general a estos datos. |
@@ -150,6 +150,22 @@ Observamos las diferencias de expresión de cada metabolito en los grupos. Los p
 -   Cluster dendrogram: en general, observamos un patrón como en el PCA, las muestras se agrupan pero no dejan de tener perfiles metabólicos diferentes. La agrupación divide las muestras en controles y cachexia entorno a la distancia 1000. El resto de agrupaciones se puede deber a la disparidad de perfiles metabólicos entre muestras y dentro de los mismos grupos.
 
 -   Comparación de la expresión entre grupos: se realiza la prueba no paramétrica de Wilcoxon para obtener los estadisticos ya que el grupo control y el grupo cachexia no tienen el mismo tamaño. Los picos en el histograma representan metabolitos con un mayor estadistico lo que sugiere diferencias de expresión entre los grupos. Por ejemplo, aquellos metabolitos con una diferencia significativa entre grupos podrían usarse de marcadores para diferencias controles de enfermos. Algunos metabolitos como acetona, uracilo y metilguanidinio, entre otros, presentan picos en el histograma. Que la expresión de estos metabolitos sea significativa o no requiere realizar otros test estadisticos.
+
+-   Repositorio de GitHub (1): en el repositorio se encontrarán los siguientes documentos:
+
+    -   Codigo.R: código usado para el realizar esta PEC.
+
+    -   Informe_PEC1: en formato .Rmd y .pdf.
+
+    -   datos_cachexia.csv: datos formateados para crear el SE.
+
+    -   Descripción de los metadatos.Rmd: breve descripción de los metadatos (colData)
+
+    -   metadatos_cachexia.csv: columna con metadatos.
+
+    -   summarized_experiment_cachexia.Rda: objeto de clase SE creado.
+
+    -   Imágenes de los gráficos: heatmap.pdf, pcaplot.png y dendrograma_muestras.png
 
 # Referencias
 
